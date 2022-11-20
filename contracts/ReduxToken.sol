@@ -52,7 +52,7 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
 contract Redux is ERC20, ERC20Burnable, Pausable, Ownable {
   using SafeMath for uint256;
-  uint256 supply = 2000000000000000000000000000;
+  uint256 const supply = 2000000000000000000000000000;
 
   constructor() ERC20("ReduX", "REDUX") {
       _mint(msg.sender, supply);
