@@ -57,11 +57,13 @@ contract Redux is ERC20, ERC20Burnable, Pausable, Ownable {
   constructor() ERC20("ReduX", "REDUX") {
       _mint(msg.sender, supply);
   }
-
+  
+  /// @notice Owner can call this to pause the token transfers
   function pause() public onlyOwner {
       _pause();
   }
-
+  
+  /// @notice Owner can call this to unpause the token transfers
   function unpause() public onlyOwner {
       _unpause();
   }
