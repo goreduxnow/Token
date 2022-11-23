@@ -1,13 +1,28 @@
-# Sample Hardhat Project
+# Token Contract
+This is the repository for the redux token contract. 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+# Project Status
+The project is completed. 
 
-Try running some of the following tasks:
+# Specs
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+Are found in the [ReduxToken.pdf](./ReduxToken.pdf) file
+
+# Getting Started
+Recommended Node version is 16.0.0 and above.
+
+```bash
+$ npm install
+$ npx hardhat test 
 ```
+
+# Project Structure
+This a hardhat javascript project.
+
+## Tests
+
+Tests are found in the `./test/` folder.
+
+## Contracts
+
+Solidity smart contracts are found in `./contracts/`.
